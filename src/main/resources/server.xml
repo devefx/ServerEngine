@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<context:component-scan base-package="org.devefx.serverengine.impl"/>
+	
+	<bean id="handlerManager" class="org.devefx.serverengine.handler.GameHandlerManager">
+		<property name="initCapacity" value="100" />
+	</bean>
+	
+	<bean id="pipelineFactory" class="org.devefx.serverengine.core.GamePipelineFactory">
+		<property name="maxFrameLength" value="10240" />
+		<property name="lengthFieldLength" value="2" />
+		<property name="handlerManager" ref="handlerManager"/>
+	</bean>
+	
+	<bean id="echoServer" class="org.devefx.serverengine.EchoServer">
+		<property name="pipelineFactory" ref="pipelineFactory" />
+		<property name="port" value="3333" />
+	</bean>
+</beans>
