@@ -12,7 +12,7 @@
   <licenses>
     <license>
       <name>The Devefx License, Version 1.0</name>
-      <url>http://www.devefx.org/licenses/LICENSE-1.0.txt</url>
+      <url>http://www.devefx.com/licenses/LICENSE-1.0.txt</url>
     </license>
   </licenses>
   <developers>
@@ -20,7 +20,7 @@
       <name>yueyouqian</name>
       <email>devefx@163.com</email>
       <organization>devefx</organization>
-      <organizationUrl>http://www.devefx.org</organizationUrl>
+      <organizationUrl>http://www.devefx.com</organizationUrl>
     </developer>
   </developers>
   <scm>
