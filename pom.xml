@@ -3,7 +3,7 @@
   <groupId>com.devefx</groupId>
   <artifactId>ServerEngine</artifactId>
   <version>1.0.0-RELEASE</version>
-  <name>org.devefx.ServerEngine</name>
+  <name>com.devefx.ServerEngine</name>
   <description>Game Server Engine</description>
   <url>https://github.com/devefx/ServerEngine</url>
   <properties>
